@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout1"
+    android:padding="16dp"
+    android:paddingLeft="@dimen/dimen_10dp"
+    android:paddingRight="@dimen/dimen_10dp"
+    tools:context=".ui.LoginActivity">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editTextEmllog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:padding="@dimen/dimen_10dp"
+        android:hint="Email"
+        android:textColor="#000000"
+        android:textColorHint="#010b00"
+        android:layout_weight="1.17" />
+
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editTextPasslog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:padding="@dimen/dimen_10dp"
+        android:hint="Password"
+        android:textColorHint="#010800"
+        android:inputType="textPassword"
+        android:textColor="#120101" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textviewforgotpwdlogin"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_pwd"
+        android:textColor="#0a0003"
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_marginLeft="120dp"
+        android:text="Login in "
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonCreateAcc"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="Create_account"
+        android:textSize="20dp" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:weightSum="1"
+           android:padding="10dp"
+           android:orientation="horizontal">
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/facebook"
+        android:layout_width="match_parent"
+      android:layout_marginTop="10dp"
+        android:textColor="#ffff"
+        android:layout_weight="0.5"
+        android:text="Login via f"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+         />
+
+                   <android.support.v7.widget.AppCompatButton
+                   android:id="@+id/google"
+                    android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="sign via G+"
+                       android:textColor="#ffff"
+
+                    android:layout_marginTop="11dp"
+            android:textSize="20dp"
+            android:layout_weight="0.5"
+                       />
+       </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
+
